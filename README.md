@@ -1,36 +1,82 @@
-# Gravie Software Engineer Challenge
+# Gravie Software Engineer Challenge by Mubarak
+------
 
-## Instructions
+# Game Rental Service
 
-After completing the challenge below, please send us an email with the location of your repository. If
-your repository is private, be sure to add us as collaborators so we can view your code.
+This project is a full-stack web application for a game rental service. It consists of a React-based frontend and a Node.js/Express backend. The application allows users to search for games using the Giant Bomb API, add them to a cart, and view their cart on a checkout page.
 
-### Time Box
+## Features
 
-3-4 Hours
+- **Search Games**: Users can search for games using the Giant Bomb API.
+- **Add to Cart**: Users can add games to their cart.
+- **View Cart**: Users can view the games in their cart on the checkout page.
 
-## Synopsis
+## Getting Started
 
-For this challenge you will consume the Giant Bomb API to create an application that will allow a
-user to search games and "rent" them. The application should consist of at least two unique pages
-(`search` and `checkout`). Your view should display the game thumbnail and title, and the rest is up
-to you. You can use any language and or framework you'd like. 
+### Prerequisites
 
-![Giant Bomb](https://upload.wikimedia.org/wikipedia/en/4/4b/Giant_Bomb_logo.png)
+Before running this project, make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-You can get started by signing up for an API key [here](https://www.giantbomb.com/api/).
+### Installation
 
-Note: You'll most likely need to use the social media technique for logging in (2022-05-16: confirmed this works with google.)  Once you're logged in, go back to the [API page](https://www.giantbomb.com/api/) to access your key.
+#### Setting Up the Backend
 
-### Resources
+1. **Navigate to the backend directory**
 
-You can find the quickstart guide
-[here](https://www.giantbomb.com/forums/api-developers-3017/quick-start-guide-to-using-the-api-1427959/). 
+   ```sh
+   cd backend
+   ```
 
-You can find a full list of API features [here](https://www.giantbomb.com/api/documentation). 
+2. **Install backend dependencies**
 
-### Questions
+   ```sh
+   npm install
+   ```
 
-Don't hesitate to reach out with any questions. Remember we are more focused on seeing your
-development process than checking off a list of requirements, so be sure you are able to speak to your
-code and your thoughts behind it.
+3. **Set up environment variables for the backend**
+
+   Create a `.env` file in the backend directory and add your Giant Bomb API key:
+
+   ```env
+   GIANT_BOMB_API_KEY=your_api_key_here
+   ```
+
+4. **Start the backend server**
+
+   ```sh
+   node index.js
+   ```
+
+   The backend server will start on [http://localhost:5000](http://localhost:5000).
+
+#### Setting Up the Frontend
+
+1. **Navigate to the frontend directory**
+
+   ```sh
+   cd frontend
+   ```
+
+2. **Install frontend dependencies**
+
+   ```sh
+   npm install
+   ```
+
+3. **Run the React application**
+
+   ```sh
+   npm start
+   ```
+
+   The application will run in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Usage
+
+- Navigate to the `/search` page to search for games.
+- Click on "Add to Cart" to add a game to your cart.
+- navigate to the `/checkout` page to view your cart and proceed with the rental process.
+
+.# gravie-developer-test
